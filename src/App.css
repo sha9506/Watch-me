@@ -1,0 +1,24 @@
+body{
+  background-color: #1A1A1A;
+}
+.nav-bar
+{
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar-item
+{
+  font-size: 30px;
+  font-weight: bolder;
+  height: 58px;
+  width: 438px;
+  background-color: #1A1A1A;
+  text-align: center;
+  border-radius: 18px;
+  color: white;
+  padding-top: 20px;
+}
