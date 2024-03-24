@@ -1,10 +1,10 @@
 import React from "react";
 
-const Watch =()=>
+const Watch =({showTime})=>
 {
     return(<div>
-        <div>
-            
+        <div className="time">
+            {showTime}
         </div>
     </div>)
 }

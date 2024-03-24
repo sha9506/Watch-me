@@ -6,8 +6,13 @@ import Timer from './Pages/Timer';
 
 const App =()=>
 {
-
   const [pagenumber , setPageNumber]=useState(1);
+
+  const date = new Date();
+  const showTime = date.getHours() 
+      + ':' + date.getMinutes() 
+      + ":" + date.getSeconds();
+      
 
   return(<div>
     <div className='nav-bar'>
@@ -16,7 +21,7 @@ const App =()=>
         <div className='nav-bar-item' onClick={()=>{setPageNumber(3)}}>Timer</div>
     </div>
    {
-    pagenumber===1? <Watch/> : null
+    pagenumber===1? <Watch showTime={showTime}/> : null
    }
    {
     pagenumber===2? <StopWatch/>:null
