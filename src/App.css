@@ -115,3 +115,12 @@ body{
 {
   background-color: #9D6EF0;
 }
+
+.message
+{
+  font-size: 56px;
+  font-weight: bolder;
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+}

@@ -3,25 +3,27 @@ import './App.css';
 import Watch from './Pages/Watch'; 
 import StopWatch from './Pages/StopWatch';
 import Timer from './Pages/Timer';
+import Login from './Pages/Login';
 
 const App =()=>
 {
-  const [pagenumber , setPageNumber]=useState(1);
+  const [pagenumber , setPageNumber]=useState(3);
+  const[username, setUsername]=useState("");
 
-  const date = new Date();
-  const showTime = date.getHours() 
-      + ':' + date.getMinutes() 
-      + ":" + date.getSeconds();
-      
+  
 
   return(<div>
+    <div>{username}</div>
     <div className='nav-bar'>
         <div className='nav-bar-item' onClick={()=>{setPageNumber(1)}}>Watch</div>
         <div className='nav-bar-item' onClick={()=>{setPageNumber(2)}}>Stop Watch</div>
         <div className='nav-bar-item' onClick={()=>{setPageNumber(3)}}>Timer</div>
     </div>
+    {
+      pagenumber===0? <Login setUsername={setUsername}/>:null
+    }
    {
-    pagenumber===1? <Watch showTime={showTime}/> : null
+    pagenumber===1? <Watch /> : null
    }
    {
     pagenumber===2? <StopWatch/>:null

@@ -26,7 +26,14 @@ const StopWatch = ()=>
 
     const handleStart=()=>
     {
-        setRunning(true);
+        if(!running)
+        {
+            setRunning(!running)
+        }
+        else
+        {
+            setTime(0)
+        }
     }
     const handlePause=()=>
     {
@@ -34,7 +41,7 @@ const StopWatch = ()=>
     }
     const handleResume=()=>
     {
-        setTime(0);
+        setRunning(true);
     }
 
     return(<div>
