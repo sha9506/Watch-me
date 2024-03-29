@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Navbar from "../Molecules/NavBar/Navbar";
 
 const StopWatch = ()=>
 {
@@ -45,6 +46,7 @@ const StopWatch = ()=>
     }
 
     return(<div>
+        <Navbar/> 
         <div className="time">
             {hours}:{minutes}:{seconds}:{milliseconds}
         </div>

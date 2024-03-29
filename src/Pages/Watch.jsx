@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "../Molecules/NavBar/Navbar";
 
 const Watch =()=>
 {
@@ -8,6 +9,7 @@ const Watch =()=>
       + ":" + date.getSeconds();
       
     return(<div>
+        <Navbar/>
         <div className="time">
             {showTime}
         </div>

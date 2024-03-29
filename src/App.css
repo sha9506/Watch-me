@@ -22,6 +22,10 @@ body{
   color: white;
   padding-top: 20px;
 }
+.active
+{
+  background-color: #9D6EF0;
+}
 :hover.nav-bar-item
 {
   background-color: #9D6EF0;
@@ -124,3 +128,54 @@ body{
   color: white;
   margin-top: 50px;
 }
+
+
+.login
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.username-input
+{
+  width: 500px;
+  height: 60px;
+  background-color: #1A1A1A;
+  border: 1px solid grey;
+  border-radius: 18px;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  font-weight: bolder;
+}
+.login-button
+{
+  width: 400px;
+  height: 50px;
+  background-color: #1A1A1A;
+  border: 1px solid grey;
+  border-radius: 18px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-top: 50px;
+}
+:hover.login-button
+{
+  background-color: #9D6EF0;
+
+}
+
+.head-user
+{
+  color:#9D6EF0;
+  font-size: 50px;
+  text-align: center;
+  font-weight: bolder;
+  padding: 20px;
+}
+

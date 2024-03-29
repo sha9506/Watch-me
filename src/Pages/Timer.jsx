@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import Navbar from "../Molecules/NavBar/Navbar";
 
 const Timer =()=>
 {
@@ -36,6 +37,7 @@ const Timer =()=>
     
 
     return(<div>
+        <Navbar/>
         <div className="time">
             {parseInt(seconds/60)}:{seconds%60}  
         </div>
